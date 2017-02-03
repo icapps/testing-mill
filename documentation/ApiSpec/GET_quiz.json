@@ -1,0 +1,30 @@
+{
+  "questions": [
+    {
+      "participantId": 1,
+      "imageURL": "String",
+      "possibleAnswers": {
+        "participants": [
+          {
+            "name": "julie",
+            "id": 1
+          },
+          {
+            "name": "paulette",
+            "id": 2
+          }
+        ],
+        "iq": [
+          {
+            "iq": 10,
+            "id": 1
+          },
+          {
+            "iq": "",
+            "id": 2
+          }
+        ]
+      }
+    }
+  ]
+}
