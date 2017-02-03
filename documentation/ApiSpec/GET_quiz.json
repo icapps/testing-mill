@@ -1,8 +1,10 @@
 {
-    "quiz": {
-        "participantId": 1,
-        "imageURL": "String",
-        "names": ["Julie", "Paulette", "Maria"],
-        "iqs": [10, 195, 34]
-    }
+    "quiz": [
+        {
+            "participantId": 1,
+            "imageURL": "String",
+            "names": ["Julie", "Paulette", "Maria"],
+            "iqs": [10, 195, 34]
+        }
+    ]
 }
