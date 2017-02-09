@@ -2,10 +2,12 @@
 
 ## GET /temptations?amount=[default: 3]&gender=[male|female|all, default: all]
 
-### 200 OK
-### Content-Type: application/json
-
 ```
+GET /temptations?amount=[default: 3]&gender=[male|female|all, default: all]
+
+200 OK
+Content-Type: application/json
+
 {
     "temptations": [
         {

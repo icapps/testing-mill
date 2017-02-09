@@ -1,9 +1,11 @@
 # GAMES
 
 ## POST /users/:id/games
-### Content-Type: application/json
 
 ```
+POST /users/:id/games
+Content-Type: application/json
+
 {
     "game": {
         "answers": [
@@ -25,12 +27,9 @@
         ]
     ]
 }
-```
 
-### 200 OK
-### Content-Type: application/json
-
-```
+200 OK
+Content-Type: application/json
 {
     "game": {
         "score": 12, # /100
@@ -42,12 +41,10 @@
         "gamesPlayed": 1
     }
 }
-```
 
-### 400 INVALID REQUEST
-### Content-Type: application/json
+400 INVALID REQUEST
+Content-Type: application/json
 
-```
 {
     "errors": {
         "status": 400,
