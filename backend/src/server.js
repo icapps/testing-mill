@@ -36,19 +36,18 @@ const app = express();
 
 app.use(helmet);
 app.use(bodyParser);
-app.use(logger);
+
+if (process.env.NODE_ENV !== 'test') app.use(logger);
 
 /*
  * ROUTE DECLARATIONS
  */
 
-// Health route
-app.get('/health', (req, res, next) => res.sendStatus(200));
+const temptationsRouter = require('./routes/temptations');
+const usersRouter = require('./routes/users');
 
-// SMS gateway route
-// app.post('/', (req, res, next) => smsFallback(req.body.Body)
-//     .then(response => res.send(response))
-//     .catch(err => next(err)));
+app.use('/temptations', temptationsRouter);
+app.use('/users', usersRouter);
 
 // Catch all unknown routes.
 app.all('*', (req, res, next) => res.sendStatus(404));
@@ -62,3 +61,5 @@ app.use(errorHandler);
 app.listen(port, () => {
   console.info(`Server listening on port ${port}`);
 });
+
+module.exports = exports = app;

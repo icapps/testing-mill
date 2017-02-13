@@ -14,20 +14,24 @@ Content-Type: application/json
             id: 1,
             name: 'Sabrina',
             imageUrl: 'http://...',
-            gender: 'female'
+            gender: 'female',
+            iq: 50
         },
         {
             id: 5,
             name: 'Sonja',
             imageUrl: 'http://...',
-            gender: 'female'
+            gender: 'female',
+            iq: 100
         },
         {
             id: 2,
             name: 'Piet',
             imageUrl: 'http://...',
-            gender: 'male'
+            gender: 'male',
+            iq: 79
         }
-    ]
+    ],
+    "available_names": ['Jos', 'Maria', ...],
 }
 ```

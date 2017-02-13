@@ -33,7 +33,7 @@ global.sinon = sinon;
 global.request = require('supertest-as-promised');
 // global.mock = mock;
 // global.joi = require('joi');
-// global.faker = require('faker');
+global.faker = require('faker');
 // global.proxyquire = require('proxyquire');
 
 // nock.disableNetConnect();

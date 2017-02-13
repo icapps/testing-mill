@@ -10,5 +10,5 @@
 
 const bodyParser = require('body-parser');
 
-module.exports = exports = bodyParser.urlencoded({ extended: true });
+module.exports = exports = bodyParser.json();
 
