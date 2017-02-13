@@ -28,6 +28,7 @@ describe('models/user', () => {
         let user;
 
         before(() => createUser().then((userObject) => user = userObject));
+        after(() => user.destroy());
 
         it('has a name', () => {
             expect(user.name).to.eql(userName);

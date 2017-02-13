@@ -31,6 +31,7 @@ describe('models/temptation', () => {
         let temptation;
 
         before(() => createTemptation().then((temptationObject) => temptation = temptationObject));
+        after(() => temptation.destroy());
 
         it('has an id', () => {
             expect(temptation.id).to.be.a('number');
