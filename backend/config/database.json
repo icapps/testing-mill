@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "temptation_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "test",
+    "password": "test",
+    "database": "temptation_test",
+    "host": "dockerhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "tempation_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
