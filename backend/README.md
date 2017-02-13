@@ -1,5 +1,20 @@
 # TEMPTATION ISLAND API
 
+**Table of Contents**
+
+- [TEMPTATION ISLAND API](#)
+	- [API SPECS](#)
+		- [USERS](#)
+			- [GET /users](#)
+			- [GET /users/:id](#)
+			- [POST /users](#)
+		- [TEMPTATIONS](#)
+			- [GET /temptations?amount=[default: 3]&gender=[male|female|all, default: all]](#)
+		- [GAMES](#)
+			- [POST /users/:id/games](#)
+	- [INSTALLATION](#)
+	- [TESTING](#)
+    
 ## API SPECS
 
 ### USERS
