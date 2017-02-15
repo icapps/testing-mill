@@ -11,7 +11,6 @@
     "body-parser": "^1.16.0",
     "dotenv": "^4.0.0",
     "express": "^4.14.1",
-    "faker": "^3.1.0",
     "helmet": "^3.4.0",
     "morgan": "^1.8.0",
     "pg": "^6.1.2",
@@ -19,6 +18,7 @@
     "sequelize": "^3.30.2"
   },
   "devDependencies": {
+    "faker": "^3.1.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "mocha": "^3.2.0",
@@ -26,5 +26,9 @@
     "sinon-chai": "^2.8.0",
     "supertest": "^3.0.0",
     "supertest-as-promised": "^4.0.2"
+  },
+  "engines": {
+      "node": "6.9.x",
+      "npm": "3.10.x"
   }
 }
